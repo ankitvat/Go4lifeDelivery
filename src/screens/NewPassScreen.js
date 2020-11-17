@@ -10,7 +10,7 @@ import {
   TextInput,
 } from 'react-native';
 import logo from '../../assets/logo.png';
-export default function Forgot({navigation}) {
+export default function NewPass({navigation}) {
   const inputElementRef = useRef(null);
   useEffect(() => {
     inputElementRef.current.setNativeProps({

@@ -6,7 +6,6 @@ import HomeScreen from '../screens/HomeScreen.js';
 import ForgotScreen from '../screens/ForgotScreen.js';
 import SignInScreen from '../screens/SignInScreen.js';
 import NewPassScreen from '../screens/NewPassScreen.js';
-import DashboardSCreen from '../screens/DashboardScreen.js';
 
 const Stack = createStackNavigator();
 
@@ -24,7 +23,6 @@ export default function MainNavigator() {
       <Stack.Screen name="Forgot" component={ForgotScreen} />
       <Stack.Screen name="SignIn" component={SignInScreen} />
       <Stack.Screen name="NewPass" component={NewPassScreen} />
-      <Stack.screen name="Dashboard" component={DashboardScreen} />
     </Stack.Navigator>
   );
 }
