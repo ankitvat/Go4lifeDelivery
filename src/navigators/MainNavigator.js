@@ -4,7 +4,7 @@ import SplashScreen from '../screens/SplashScreen.js';
 import LoginScreen from '../screens/LoginScreen.js';
 import HomeScreen from '../screens/HomeScreen.js';
 import ForgotScreen from '../screens/ForgotScreen.js';
-import SignInScreen from '../screens/SignInScreen.js';
+
 import NewPassScreen from '../screens/NewPassScreen.js';
 
 const Stack = createStackNavigator();
@@ -21,7 +21,7 @@ export default function MainNavigator() {
       <Stack.Screen name="Login" component={LoginScreen} />
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Forgot" component={ForgotScreen} />
-      <Stack.Screen name="SignIn" component={SignInScreen} />
+
       <Stack.Screen name="NewPass" component={NewPassScreen} />
     </Stack.Navigator>
   );

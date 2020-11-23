@@ -31,9 +31,8 @@ export default function Forgot({navigation}) {
           style={{
             fontFamily: 'Proxima Nova Bold',
             alignItems: 'center',
-            position: 'absolute',
-            top: '-90%',
-            right: '28%',
+            justifyContent: 'center',
+            marginBottom: '15%',
           }}>
           Reset Your Password
         </Text>

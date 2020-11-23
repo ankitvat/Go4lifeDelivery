@@ -7,7 +7,12 @@ export default class SplashScreen extends Component {
   constructor(props) {
     super(props);
   }
-
+  componentDidMount() {
+    const {navigation} = this.props;
+    setTimeout(() => {
+      navigation.replace('Login');
+    }, 1200);
+  }
   render() {
     return (
       <View style={styles.main}>
@@ -20,10 +25,6 @@ export default class SplashScreen extends Component {
           autoPlay
           loop={false}
           speed={1.8}
-          onAnimationFinish={() => {
-            console.log('Animation Finished!');
-            this.props.navigation.replace('Login');
-          }}
         />
         <View style={styles.bottomHeader}>
           <Text style={{fontFamily: 'ProximaNova-Regular', fontSize: 15}}>

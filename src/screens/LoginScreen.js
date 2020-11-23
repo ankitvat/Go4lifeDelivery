@@ -25,9 +25,7 @@ export default function Login({navigation}) {
   const onForgot = () => {
     navigation.navigate('Forgot');
   };
-  const onSign = () => {
-    navigation.navigate('SignIn');
-  };
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -63,16 +61,6 @@ export default function Login({navigation}) {
             Forgot Password?
           </Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={onSign}>
-          <Text
-            style={{
-              fontFamily: 'Proxima Nova Bold',
-              color: 'grey',
-              paddingVertical: '5%',
-            }}>
-            New to Go4Life? Sign Up.
-          </Text>
-        </TouchableOpacity>
       </View>
     </View>
   );
@@ -92,6 +80,7 @@ const styles = StyleSheet.create({
     width: 180,
     justifyContent: 'center',
     alignItems: 'center',
+    marginLeft: '5%',
   },
   form: {
     width: '90%',
