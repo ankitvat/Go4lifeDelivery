@@ -39,6 +39,7 @@ export default function NewPass({navigation}) {
             alignItems: 'center',
             justifyContent: 'center',
             marginBottom: '15%',
+            marginRight: '2%',
           }}>
           Reset Your Password
         </Text>

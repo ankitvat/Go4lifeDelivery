@@ -11,7 +11,7 @@ export default class SplashScreen extends Component {
     const {navigation} = this.props;
     setTimeout(() => {
       navigation.replace('Login');
-    }, 1200);
+    }, 1500);
   }
   render() {
     return (
